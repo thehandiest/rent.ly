@@ -1,0 +1,25 @@
+extends index
+
+block content
+
+  h1 
+    !=title
+  h2
+    | Which building do you manage?
+
+  form(id="searchAddress", name="searchAddress")
+    include form/address
+    include form/button.searchaddress.jade
+
+  #map
+    | &nbsp;
+
+  form(id="registerUser", name="registerUser")
+    include form/firstname
+    include form/lastname
+    include form/email
+    include form/button.register.jade
+
+  script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2zdWo_P4VpKSL5UALlCw4qEl_IOnZAn0&callback=initMap")
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+  script(src='js/lib.js')
