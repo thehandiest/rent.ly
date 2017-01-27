@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/test1.coffee --compilers coffee:coffee-script/register"
+    "test": "mocha tests/frontend.coffee --compilers coffee:coffee-script/register"
   },
   "author": "",
   "license": "ISC",
